@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Cruz Portfolio</title>
+<link rel="stylesheet" href="./css/index.css">
+<script defer src="./js/index.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header header--light">
+    <div class="header__container">
+
+      <a href="./index.html" class="header__logo">JUAN CRUZ PORTFOLIO</a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="./sobre mi.html" class="nav__link">Sobre Mi</a></li>
+          <li class="nav__item"><a href="./portfolio.html" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="./contact.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="social social--header">
+        <a href="https://www.behance.net/juancruzaez" target="_blank" rel="noopener noreferrer">
+          <i class="ri-behance-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/juancruznanez" target="_blank" rel="noopener noreferrer">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/jnanez055-cmd" target="_blank" rel="noopener noreferrer">
+          <i class="ri-github-line"></i>
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+  <!--FIN HEADER -->
+
+  <section class="hero hero--portfolio">
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        PORTFOLIO <span class="hero__dot">.</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Proyectos como Diseñador Gráfico.
+        Dominio de Adobe Creative Suite y herramientas de video. 
+        Apasionado por las tendencias y la comunicación visual efectiva.
+      </p>
+    </div>
+
+    <div class="hero__cta">
+      <a href="/pdfcv/CVjuancruznanez.pdfs" class="button button--outline" download aria-label="Descargar currículum"> Descargar CV
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Grid Portfolio -->
+
+  <section class="grid">
+    <div class="grid_gallery">
+      <img class="img__grid" src="/media/Portolio/ATM/atm01.jpg" alt="ATM" data-project="atm">
+      <img class="img__grid" src="/media/Portolio/Energizer/0b4675184885011.655a4b56215e7.jpg" alt="Energizer"
+        data-project="energizer">
+      <img class="img__grid" src="/media/Portolio/Hierbica /60b1f0151023225.6304d2622c234.jpg" alt="Hierbica"
+        data-project="hierbica">
+      <img class="img__grid" src="/media/Portolio/Modu/Royo_21-06-24-137.jpg" alt="Modu" data-project="modu">
+      <img class="img__grid" src="/media/Portolio/Novateam/01.jpg" alt="Novateam" data-project="novateam">
+      <img class="img__grid" src="/media/Portolio/RER/01.png" alt="RER" data-project="rer">
+      <img class="img__grid" src="/media/Portolio/Sabor a Café/1d18f2186690555.6579cf338f513.png" alt="Sabor-a-café"
+        data-project="sabor-a-cafe">
+      <img class="img__grid" src="/media/Portolio/V16/1df441241252811.6952bfccc5e95.png" alt="V16" data-project="v16">
+      <img class="img__grid" src="/media/Portolio/Virgin/01.jpg" alt="Virgin" data-project="virgin">
+      <img class="img__grid" src="/media/Portolio/Web/6bf9c5140603683.62447c14b2c43.png" alt="Web" data-project="web">
+    </div>
+     <span class="portfolio-modal__counter" id="modalCounter"></span>
+  </section>
+
+  <!-- Carrusel -->
+
+  <div class="portfolio-modal" id="portfolioModal" aria-hidden="true">
+    <button class="portfolio-modal__close" id="closeModal" aria-label="Cerrar galería">✕</button>
+    <button class="portfolio-modal__nav portfolio-modal__nav--prev" id="prevSlide"
+      aria-label="Imagen anterior">‹</button>
+    <img src="" alt="Proyecto portfolio" class="portfolio-modal__image" id="modalImage">
+    <button class="portfolio-modal__nav portfolio-modal__nav--next" id="nextSlide"
+      aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <!-- Grid Portfolio -->
+<!--  FOOTER -->
+      <footer class="footer footer--dark">
+
+      <div class="social social--footer">
+        <a href="https://www.behance.net/juancruzaez" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+          <i class="ri-behance-fill"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/juancruznanez" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+         <a href="https://github.com/jnanez055-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+
+      </div>
+<nav class="footer__nav" aria-label="Navegación secundaria">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="/index.html" class="footer__link">Home</a>
+        </li>
+        <li class="footer__item">
+          <a href="/sobre mi.html" class="footer__link">Sobre</a>
+        </li>
+        <li class="footer__item">
+          <a href="/portfolio.html" class="footer__link">Portfolio</a>
+        </li>
+        <li class="footer__item">
+          <a href="/contact.html" class="footer__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="footer__copy">
+      Diseñado por Juan Cruz Ñañez
+    </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
